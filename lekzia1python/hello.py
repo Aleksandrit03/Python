@@ -119,3 +119,7 @@
 stroka1 = input()
 stroka2 = input()
 print(stroka1.count(stroka2))
+                                # Вставка элемента в список
+
+#my_list = [1, 2, 3, 4, 5]
+#my_list.insert(1,'Привет') // [1, 'Привет', 2, 3, 4, 5]
