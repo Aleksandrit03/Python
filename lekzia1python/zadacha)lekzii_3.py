@@ -1,17 +1,6 @@
-path = 'function.txt'
-f = open(path, 'r')
-data = f.read() + ' '
-f.close()
+data = '1 2 5 7 8 3 4 6 9'.split()
 
-numbers = []
-
-while data != '':
-    space_pos = data.index(' ')
-    numbers.append(int(data[:space_pos]))
-    data = data[space_pos + 1:]
-
-out = []
-for e in numbers:
-    if not e % 2:
-        out.append((e, e ** 2))
-print(out)
+res = map(int, data)
+res = filter(lambda x: not x % 2, res)
+res = list(map(lambda x: (x, x**2), res))
+print(res)

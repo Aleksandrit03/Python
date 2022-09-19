@@ -23,8 +23,15 @@ calc(lambda x, y: x + y, 4, 11)
                                   # СПИСОК
 spisok = [i for i in range(1, 21) if i%2 == 0]
 print(spisok)
+
+data = list(map(int,input().split())) # Преобразование вводимых значений в лист
+print(data)
                                   # СПИСОК КОРТЕЖЕЙ
 def mult(x): 
     return x**2
 spisok = [(i, mult(i)) for i in range(1, 21) if i%2 == 0]
 print(spisok)
+#                                    Функция filter - фильтрует данные
+data = [x for x in range(10)]
+result = list(filter(lambda x:not x % 2, data))
+print(result)
